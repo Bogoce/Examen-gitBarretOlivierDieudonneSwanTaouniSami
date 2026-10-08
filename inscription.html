@@ -31,7 +31,17 @@
 <option value="conference-open-source">Conférence Open Source (22 novembre 2026)</option>
 <option value="hackathon-web">Hackathon Web 2026 (5 décembre 2026)</option>
 </select>
+
+<button type="submit">S'inscrire</button>
 </form>
+<p id="confirmation" hidden>Merci, votre inscription est bien enregistrée.</p>
+<script>
+document.querySelector(".formulaire-inscription").addEventListener("submit", function (e) {
+  e.preventDefault();
+  document.getElementById("confirmation").hidden = false;
+  this.reset();
+});
+</script>
 </main>
 </body>
 </html>
