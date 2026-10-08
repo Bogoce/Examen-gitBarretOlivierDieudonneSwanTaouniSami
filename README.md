@@ -142,3 +142,21 @@ Les Issues, ça sert à écrire ce qu'il y a à faire pour chaque tâche, avec d
 *Réponse de Swan DIEUDONNE (@5wVn), Étudiant 3*
 
 Sur GitHub, on ouvre le fichier et on clique sur « Blame » : pour chaque ligne, on voit le dernier commit qui l'a modifiée et qui l'a fait. Avec « History », on voit tous les commits du fichier. Ensuite, à partir du commit, on retrouve la Pull Request, et dedans l'Issue (`Closes #8`) qui explique pourquoi on a changé ça. Par exemple, pour le `HEAD` qui traînait dans `style.css`, on a pu retrouver que ça venait de la synchro entre `main` et `develop`.
+| @5wVn | BARRET | Olivier | Étudiant 2 |
+| @Bogogce | DIEUDONNE | Swan | Étudiant 1 |
+| @taounisami-netizen | TAOUNI | Sami | Étudiant 3 |
+
+
+## Workflow
+Git Flow : `main` (versions stables), `develop` (intégration), `feature/*`, `bugfix/*`, `release/*`, `hotfix/*`.
+**1. Quel est l'intérêt de séparer développements en cours et versions stables ?**
+*Réponse de Sami TAOUNI (@taounisami-netizen), Étudiant 1*
+Comme ça, `main` reste toujours propre et utilisable. On bosse sur `develop` sans risquer de casser la version en prod si un truc n'est pas fini ou bugué.
+
+**2. Pourquoi imposer une revue de code avant intégration ?**
+*Réponse de Sami TAOUNI (@taounisami-netizen), Étudiant 1*
+Un deuxième regard repère des erreurs qu'on ne voit pas soi-même. Et tout le monde sait ce qui a changé dans le code. Ici, c'est en revue qu'on a vu un reste de conflit (`HEAD`) oublié dans `style.css`.
+
+**3. Quelles situations provoquent un conflit Git et pourquoi sa résolution n'est-elle pas toujours automatique ?**
+*Réponse de Sami TAOUNI (@taounisami-netizen), Étudiant 1*
+Quand deux branches modifient les mêmes lignes d'un fichier, ou qu'une branche modifie un fichier que l'autre a supprimé. Git ne peut pas deviner quelle version est la bonne, donc c'est à nous de choisir quoi garder.
