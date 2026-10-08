@@ -8,7 +8,20 @@
   padding: 20px;
 }
 
-/* PIÈGE DEMANDÉ PAR LE SUJET : largeur fixe pour provoquer l'anomalie sur mobile */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
 .carte-evenement {
   width: 420px;
   border: 1px solid #ccc;
