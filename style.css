@@ -1,4 +1,33 @@
-/* --- FEATURE B : CATALOGUE D'ÉVÉNEMENTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+HEAD
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f1b2e;
+  background: #faf8ff;
+}
+
+nav {
+  background: #4b2aad;
+  padding: 1.2rem 2rem;
+  text-align: center;
+  border-bottom: 4px solid #ff9f1c;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
 
 .liste-evenements {
   display: flex;
@@ -8,7 +37,20 @@
   padding: 20px;
 }
 
-/* PIÈGE DEMANDÉ PAR LE SUJET : largeur fixe pour provoquer l'anomalie sur mobile */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
 .carte-evenement {
   width: 420px;
   border: 1px solid #ccc;
@@ -35,4 +77,30 @@
 
 .carte-evenement a:hover {
   background-color: #0056b3;
+}
+
+.slogan {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.presentation h2,
+.presentation p {
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #ff9f1c;
+  color: #1f1b2e;
+  text-decoration: none;
+  border-radius: 4px;
 }
