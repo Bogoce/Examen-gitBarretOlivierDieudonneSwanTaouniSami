@@ -9,10 +9,19 @@
 }
 
 nav {
+  background: #333;
+  padding: 0.8rem 1rem;
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  font-size: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  margin: 0;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
