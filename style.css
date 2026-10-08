@@ -1,3 +1,4 @@
+HEAD
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -23,4 +24,40 @@ main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem;
+}
+
+.liste-evenements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.carte-evenement {
+  width: 420px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carte-evenement h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.carte-evenement a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.carte-evenement a:hover {
+  background-color: #0056b3;
 }
