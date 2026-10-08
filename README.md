@@ -109,4 +109,3 @@ Quand deux branches modifient les mêmes lignes d'un fichier, ou qu'une branche 
 
 **8. Comment retrouver l'origine d'une modification dans l'historique GitHub ?**
 *Réponse de Swan DIEUDONNE (@5wVn), Étudiant 3*
-À COMPLÉTER
