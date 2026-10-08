@@ -3,7 +3,7 @@
 Évaluation Git & GitHub — travail collaboratif en Git Flow.
 
 ## Équipe
-
+ 
 | Pseudonyme GitHub | Nom | Prénom | Rôle |
 |---|---|---|---|
 | @taounisami-netizen | TAOUNI | Sami | Étudiant 1 |
@@ -81,13 +81,19 @@ Résolution coordonnée par Swan : À COMPLÉTER PAR SWAN.
 ## Questions de synthèse
 
 **1. Quel est l'intérêt de séparer développements en cours et versions stables ?**
-*Réponse de Sami TAOUNI (@taounisami-netizen), Étudiant 1*
-Comme ça, `main` reste toujours propre et utilisable. On bosse sur `develop` sans risquer de casser la version en prod si un truc n'est pas fini ou bugué.
 
+*Réponse de Sami TAOUNI (@taounisami-netizen)*
+
+Séparer `develop` et `main` permet de toujours disposer d'une version stable et livrable sur `main`, pendant que les nouvelles fonctionnalités sont intégrées et testées sur `develop`. Un développement inachevé ou bogué ne peut ainsi pas casser la version utilisée en production.
+ 
 **2. Pourquoi imposer une revue de code avant intégration ?**
 *Réponse de Sami TAOUNI (@taounisami-netizen), Étudiant 1*
 Un deuxième regard repère des erreurs qu'on ne voit pas soi-même, et tout le monde sait ce qui a changé dans le code. Ici, c'est en revue qu'on a vu un reste de conflit (`HEAD`) oublié dans `style.css`.
 
+*Réponse de Sami TAOUNI (@taounisami-netizen)*
+
+La revue permet de repérer les erreurs avant qu'elles n'atteignent les branches principales, de vérifier que le code respecte les conventions de l'équipe et de partager la connaissance du code entre les membres. Dans ce projet, elle a par exemple permis de détecter un résidu de marqueur de conflit dans `style.css`.
+ 
 **3. Quelles situations provoquent un conflit Git et pourquoi sa résolution n'est-elle pas toujours automatique ?**
 *Réponse de Sami TAOUNI (@taounisami-netizen), Étudiant 1*
 Quand deux branches modifient les mêmes lignes d'un fichier, ou qu'une branche modifie un fichier que l'autre a supprimé. Git ne peut pas deviner quelle version est la bonne, donc c'est à nous de choisir quoi garder.
