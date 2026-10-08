@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asso'Events — Inscription</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="evenements.html">Événements</a>
+<a href="inscription.html">Inscription</a>
+</nav>
+<main>
+<h1>Inscription</h1>
+<form class="formulaire-inscription" action="#" method="post">
+<label for="nom">Nom</label>
+<input type="text" id="nom" name="nom" required>
+
+<label for="prenom">Prénom</label>
+<input type="text" id="prenom" name="prenom" required>
+
+<label for="email">E-mail</label>
+<input type="email" id="email" name="email" required>
+
+<label for="evenement">Événement</label>
+<select id="evenement" name="evenement" required>
+<option value="">-- Choisir un événement --</option>
+<option value="atelier-git">Atelier Git & GitHub (15 novembre 2026)</option>
+<option value="conference-open-source">Conférence Open Source (22 novembre 2026)</option>
+<option value="hackathon-web">Hackathon Web 2026 (5 décembre 2026)</option>
+</select>
+
+<button type="submit">S'inscrire</button>
+</form>
+<p id="confirmation" hidden>Merci, votre inscription est bien enregistrée.</p>
+<script>
+document.querySelector(".formulaire-inscription").addEventListener("submit", function (e) {
+  e.preventDefault();
+  document.getElementById("confirmation").hidden = false;
+  this.reset();
+});
+</script>
+</main>
+</body>
+</html>
