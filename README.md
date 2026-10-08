@@ -76,6 +76,7 @@ Résolution coordonnée par Swan : À COMPLÉTER PAR SWAN.
 - La PR #4 (synchronisation directe `main` vers `develop`) ne pouvait pas être résolue car les deux branches sont protégées. Elle a été remplacée par une branche intermédiaire `chore/sync-main-develop`.
 - Un résidu de marqueur de conflit (`HEAD`) est resté dans `style.css` après la synchronisation. Il a été repéré en revue de code.
 - Des commits ont été faits par erreur sur `develop` en local au lieu de la branche de feature. Ils ont été déplacés sur `feature/adaptation-mobile` avant le push.
+- Les réponses aux questions ont été rédigées sur des branches séparées, ce qui a provoqué des conflits sur le README, résolus en conservant la version complète.
 
 ## Questions de synthèse
 
@@ -93,15 +94,15 @@ Quand deux branches modifient les mêmes lignes d'un fichier, ou qu'une branche 
 
 **4. Quelle différence entre correction classique et correction urgente de production ?**
 *Réponse d'Olivier BARRET (@Bogoce), Étudiant 2*
-À COMPLÉTER
+Une correction urgente sur la production s'appelle un hotfix : elle se fait dans l'urgence, souvent pour un problème critique, directement depuis `main`. Une correction classique se fait dans `develop` et part avec la prochaine livraison planifiée.
 
 **5. Pourquoi répercuter une correction de production dans les développements en cours ?**
 *Réponse d'Olivier BARRET (@Bogoce), Étudiant 2*
-À COMPLÉTER
+Il faut répercuter la correction dans les branches de développement, car le bug s'y trouve toujours : sinon, il reviendrait à la prochaine livraison.
 
 **6. Quel est le rôle d'une branche de release ?**
 *Réponse d'Olivier BARRET (@Bogoce), Étudiant 2*
-À COMPLÉTER
+La branche de release permet de préparer la mise en production : on teste le produit fini et on fait les derniers ajustements avant la mise en production, sans ajouter de nouvelles fonctionnalités.
 
 **7. Comment GitHub Projects et les Issues facilitent-ils organisation et traçabilité ?**
 *Réponse de Swan DIEUDONNE (@5wVn), Étudiant 3*
@@ -109,3 +110,4 @@ Quand deux branches modifient les mêmes lignes d'un fichier, ou qu'une branche 
 
 **8. Comment retrouver l'origine d'une modification dans l'historique GitHub ?**
 *Réponse de Swan DIEUDONNE (@5wVn), Étudiant 3*
+À COMPLÉTER
