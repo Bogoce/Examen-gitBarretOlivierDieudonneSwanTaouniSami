@@ -117,19 +117,19 @@ Un conflit survient lorsque deux branches modifient les mêmes lignes d'un même
 
 *Réponse d'Olivier BARRET (@Bogoce)*
 
-À COMPLÉTER
+Une correction urgente sur la production s'appelle un hotfix : elle se fait dans l'urgence, souvent pour un problème critique, directement depuis `main`. Une correction classique se fait dans `develop` et part avec la prochaine livraison planifiée.
  
 **5. Pourquoi répercuter une correction de production dans les développements en cours ?**
 
 *Réponse d'Olivier BARRET (@Bogoce)*
 
-À COMPLÉTER
+Il faut répercuter la correction dans les branches de développement, car le bug s'y trouve toujours : sinon, il reviendrait à la prochaine livraison.
  
 **6. Quel est le rôle d'une branche de release ?**
 
 *Réponse d'Olivier BARRET (@Bogoce)*
 
-À COMPLÉTER
+La branche de release permet de préparer la mise en production : on teste le produit fini et on fait les derniers ajustements avant la mise en production, sans ajouter de nouvelles fonctionnalités.
  
 **7. Comment GitHub Projects et les Issues facilitent-ils organisation et traçabilité ?**
 
