@@ -4,8 +4,8 @@
 
 | Pseudonyme GitHub | Nom | Prénom | Rôle |
 |---|---|---|---|
-| @pseudo | BARRET | Olivier | Étudiant X |
-| @pseudo | DIEUDONNE | Swan | Étudiant X |
+| @bogoce | BARRET | Olivier | Étudiant X |
+| @5wVn | DIEUDONNE | Swan | Étudiant X |
 | @taounisami-netizen | TAOUNI | Sami | Étudiant X |
 
 ## Workflow
